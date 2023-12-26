@@ -10,4 +10,8 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: simple-deployment
+  resources:
+    requests:
+      cpu: 50m
+      memory: 50Mi
   targetCPUUtilizationPercentage: 50
