@@ -10,11 +10,5 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: simple-deployment
-  resources:
-    requests:
-      cpu: 20m
-      memory: 20Mi
-    limits:
-      cpu: 50m
-      memory: 50Mi
   targetCPUUtilizationPercentage: 50
+  targetMemoryUtilizationPercentage: 50
