@@ -23,5 +23,6 @@ spec:
       - CreateNamespace=true  
    
   ignoreDifferences:
-  - group: '*'
-    kind: '*'
+    - kind: Secret
+      jsonPointers:
+        - /data/my-password
